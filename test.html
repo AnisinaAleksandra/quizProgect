@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/common.css" />
+    <link rel="stylesheet" href="src/css/test.css" />
+
+    <title>Test</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="src/images/Logo.svg" alt="logo" />
+        </div>
+      </div>
+    </header>
+
+    <section class="test">
+      <div class="container">
+        <div class="test-pre-title" id="pre-title">
+          Тест №1. “JavaScript: Начальный уровень”
+        </div>
+        <div class="test-progress-bar" id="progress-bar"></div>
+        <div class="test-question">
+          <div class="test-question-title" id="title"></div>
+          <div class="test-question-options" id="options"></div>
+        </div>
+        <div class="test-actions">
+          <div class="test-previous-action">
+            <button class="button button-transparent" disabled id="prev">
+              Назад
+            </button>
+          </div>
+          <div class="test-time">
+            <div class="text-time-text">Осталось времени:</div>
+            <div class="test-time-clock" id="timer">59</div>
+          </div>
+          <div class="test-next-action">
+            <button class="button button-transparent" disabled id="next">
+              Дальше
+            </button>
+            <div class="test-pass-see-question">
+              <a href="javascript:void(0)" id="pass"
+                >Пропустить вопрос
+                <img src="src/images/arrowMini.svg" alt="Стрелка"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">«АйтилогияQuiz» © Все права защищены / 2022</footer>
+
+    <script src="src/js/common.js"></script>
+    <script src="src/js/test.js"></script>
+  </body>
+</html>

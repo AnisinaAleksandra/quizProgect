@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: "Museo Sans Cyrl", sans-serif;
+  color: #333333;
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl";
+  src: url("../fonts/MuseoSansCyrl500.ttf");
+}
+
+@font-face {
+  font-family: "Museo SansCyrl Bold";
+  src: url("../fonts/museosanscyrl-700.ttf");
+}
+
+.header {
+  padding: 42px 0 40px;
+  border-bottom: 1px solid #dcdcf3;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.common-title {
+  font-family: "Museo SansCyrl Bold", sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.common-title span {
+  color: #6933dc;
+}
+
+.big-title {
+  font-family: "Museo SansCyrl Bold", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+}
+.big-title span {
+  color: #6933dc;
+}
+.button {
+  padding: 14px 35px;
+  background: #6933dc;
+  border-radius: 6px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  transition: 0.4s;
+  text-decoration: none;
+}
+.button:disabled {
+  background-color: #e2dfe7;
+  cursor: not-allowed;
+}
+a.button {
+  display: inline-block;
+}
+.button:hover {
+  background: #432781;
+}
+.button-transparent {
+  background: transparent;
+  color: #6933dc;
+  border: 1px solid #6933dc;
+}
+
+.button-transparent:disabled {
+  background: transparent;
+  color: #e2dfe7;
+  border: 1px solid #e2dfe7;
+}
+
+.button-transparent:hover {
+  background: #6933dc;
+  color: #ffffff;
+}
+.footer {
+  text-align: center;
+  padding: 40px 0;
+  font-family: "Museo Sans Cyrl";
+  font-size: 13px;
+  line-height: 16px;
+  color: #dcdcf3;
+}
+
+a {
+  color: #6933dc;
+}
+
+.test-pass-see-question {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.test-pass-see-question a {
+  font-family: "Museo Sans Cyrl", sans-serif;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #6933dc;
+  display: flex;
+  align-items: center;
+}
+
+.test-pass-see-question a:hover {
+  text-decoration: underline;
+}
+.test-pass-see-question a img {
+  margin-left: 13px;
+}
+
+.option-answer[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #6933dc;
+  border-radius: 50px;
+  margin: 0 13px 0 0;
+  transform: translateY(2px);
+
+  display: grid;
+  place-content: center;
+}
+
+.option-answer[type="radio"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: inset 10px 10px #6933dc;
+  transition: 0.2s ease transform;
+  transform: scale(0);
+}
+
+.option-answer[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+.test-question-title {
+  font-family: "Museo SansCyrl Bold", sans-serif;
+
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.test-question-title span {
+  color: #6933dc;
+}
+
+.test-question-option {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  display: flex;
+}
