@@ -15,14 +15,10 @@
   color: #dcdcf3;
 }
 
-
-
 .test-question-options {
   margin-top: 58px;
   min-height: 438px;
 }
-
-
 
 .test-question-option:hover label {
   cursor: pointer;
